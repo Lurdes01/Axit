@@ -237,6 +237,10 @@ h1, h2, h3, h4, h5, h6, p {
     text-decoration: none;
 }
 
+.btn:focus {
+    outline: 0;
+}
+
 .btn--transparent {
     padding: 10px 40px;
     border: 2px solid #d1d1d1;
@@ -244,7 +248,8 @@ h1, h2, h3, h4, h5, h6, p {
     transition: background 0.1s linear, color 0.1s linear;
 }
 
-.btn--transparent:hover {
+.btn--transparent:hover,
+.btn--transparent:focus {
     background-color: #d1d1d1;
     color: #000;
 }
@@ -258,12 +263,8 @@ h1, h2, h3, h4, h5, h6, p {
     transition: background 0.1s linear;
 }
 
-.btn--form:hover {
-    background-color: #ee771c;
-}
-
+.btn--form:hover,
 .btn--form:focus {
-    outline: 0;
     background-color: #ee771c;
 }
 
@@ -279,12 +280,8 @@ h1, h2, h3, h4, h5, h6, p {
     transition: background 0.1s linear;
 }
 
-.btn--orange:hover {
-    background-color: #ee771c;
-}
-
+.btn--orange:hover,
 .btn--orange:focus {
-    outline: 0;
     background-color: #ee771c;
 }
 
@@ -473,6 +470,10 @@ h1, h2, h3, h4, h5, h6, p {
 .btn--tabs.active,
 .btn--tabs:hover {
     background-color: #ff8b38;
+}
+
+.btn--tabs:focus {
+    outline: 0;
 }
 
 .btn--tabs:last-child {
