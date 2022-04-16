@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Axit</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -19,11 +21,11 @@
                 </a>
             </div>
             <nav class="nav">
-                <a class="nav__item" href="#">Features</a>
-                <a class="nav__item" href="#">About</a>
-                <a class="nav__item" href="#">Pricing</a>
-                <a class="nav__item" href="#">Reviews</a>
-                <a class="nav__item" href="#">Contact</a>
+                <a class="nav__item" href="#" data-scroll="#features">Features</a>
+                <a class="nav__item" href="#" data-scroll="#about">About</a>
+                <a class="nav__item" href="#" data-scroll="#pricing">Pricing</a>
+                <a class="nav__item" href="#" data-scroll="#reviews">Reviews</a>
+                <a class="nav__item" href="#" data-scroll="#contact">Contact</a>
             </nav>
 
             <button class="burger" type="button">
@@ -91,7 +93,7 @@
     </div> <!-- ./socials -->
 </div> <!-- ./container -->
 
-<div class="tabs">
+<div class="tabs" id="features">
     <div class="container">
         <div class="tabs__inner">
             <div class="tabs__col tabs__col--first">
@@ -190,7 +192,7 @@
     </div> <!-- ./container -->
 </div> <!-- ./standartpic -->
 
-<section class="section">
+<section class="section" id="about">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">Why this is awesome</h2>
@@ -216,7 +218,7 @@
     </div> <!-- ./container -->
 </section>
 
-<section class="section section--gray">
+<section class="section section--gray" id="pricing">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">Pricing Options</h2>
@@ -284,7 +286,7 @@
     </div> <!-- ./container -->
 </section>
 
-<section class="section">
+<section class="section" id="reviews">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">What Our Customers Are Saying</h2>
@@ -338,7 +340,7 @@
     </div>
 </section>
 
-<section class="section">
+<section class="section" id="contact">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">Contact Us</h2>
